@@ -1,4 +1,12 @@
-module.exports = function countCats(/* matrix */) {
-  throw 'Not implemented';
-  // remove line with error and write your code here
+module.exports = function countCats (arr) {
+	let total = 0;
+	arr.map((subArr) =>
+		subArr.forEach(
+			(val) =>
+
+					val === '^^' ? total++ :
+					(total += 0)
+		)
+	);
+	return total;
 };
